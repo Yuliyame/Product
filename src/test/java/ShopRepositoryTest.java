@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
+
 class ShopRepositoryTest {
     @Test
     public void testRemoveWhenProductExistOne() {
@@ -18,6 +20,7 @@ class ShopRepositoryTest {
 
         assertArrayEquals(expected, actual);
     }
+
     @Test
     public void testRemoveWhenProductExistTwo() {
         ShopRepository repo = new ShopRepository();
@@ -34,6 +37,7 @@ class ShopRepositoryTest {
 
         assertArrayEquals(expected, actual);
     }
+
     @Test
     public void testRemoveWhenProductExistThree() {
         ShopRepository repo = new ShopRepository();
@@ -50,6 +54,7 @@ class ShopRepositoryTest {
 
         assertArrayEquals(expected, actual);
     }
+
     @Test
     public void testRemoveWhenProductNotExist() {
         ShopRepository repo = new ShopRepository();
