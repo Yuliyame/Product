@@ -1,7 +1,6 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
-
 class ShopRepositoryTest {
     @Test
     public void testRemoveWhenProductExistOne() {
@@ -62,7 +61,7 @@ class ShopRepositoryTest {
         repo.add(product2);
         repo.add(product3);
 
-        Assertions.AssertThrows (NotFoundException.class,
+        Assertions.assertThrows(NotFoundException.class,
                 () -> repo.remove(444)
         );
     }
