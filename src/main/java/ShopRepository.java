@@ -28,7 +28,6 @@ public class ShopRepository {
     public Product[] findAll() {
         return products;
     }
-
     // Этот способ мы рассматривали в теории в теме про композицию
     public void remove(int id) {
         Product[] tmp = new Product[products.length - 1];

@@ -15,14 +15,30 @@ public class Product {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Product product = (Product) o;
-        return id == product.id && price == product.price && title.equals(product.title);
+        return id == product.id
+                && price == product.price
+                && title.equals(product.title);
     }
-
     @Override
     public int hashCode() {
         return Objects.hash(id, title, price);
     }
 
+    public int getId() {
+        return id;
+    }
+    public String getTitle() {
+        return title;
+    }
+    public void setTitle(String title) {
+        this.title = title;
+    }
+    public int getPrice() {
+        return price;
+    }
+    public void setPrice(int price) {
+        this.price = price;
+    }
     // геттеры + сеттеры
     // на id только геттер — пусть будет неизменяемым для товара
 }
