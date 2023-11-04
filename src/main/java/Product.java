@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Product {
     protected int id;
     protected String title;
@@ -17,7 +19,7 @@ public class Product {
         Product product = (Product) o;
         return id == product.id
                 && price == product.price
-                && title.equals(product.title);
+                && Objects.equals(title, product.title);
     }
     @Override
     public int hashCode() {
